@@ -1,1 +1,135 @@
-<p>header works!</p>
+<header class="navbar-light navbar-sticky header-static">
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container-fluid px-3 px-xl-5">
+			<!-- Logo START -->
+			<a class="navbar-brand" href="index.html">
+				<img class="light-mode-item navbar-brand-item" src="/img/logo2.png" alt="logo">
+			</a>
+			<!-- Logo END -->
+
+			<!-- Responsive navbar toggler -->
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-animation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse w-100 collapse" id="navbarCollapse">
+
+				<!-- Nav category menu START -->
+				<ul class="navbar-nav navbar-nav-scroll me-auto">
+					<!-- Nav item 1 Demos -->
+					<li class="nav-item dropdown dropdown-menu-shadow-stacked">
+						<a class="nav-link bg-warning bg-opacity-5 rounded-3 text-bs-white px-3 py-3 py-xl-0" href="#" id="categoryMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-ui-radios-grid me-2"></i><span>Categorias</span></a>
+						<ul class="dropdown-menu" aria-labelledby="categoryMenu">
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Academias</a>
+								<div class="dropdown-menu dropdown-menu-start dropdown-width-lg" data-bs-popper="none">
+									<div class="row p-4">
+										<!-- Dropdown column item -->
+										<div class="col-xl-6 col-xxl-4 mb-4 mb-xl-0">
+											<h6 class="mb-0">Academias</h6>
+											<hr> <!-- Divider -->
+											<!-- Dropdown item -->
+											<div class="d-flex mb-4 position-relative">
+												<img src="assets/images/client/uni-logo-01.svg" class="icon-md" alt="">
+												<div class="ms-3">
+													<a class="stretched-link h6 mb-0" href="#">Red Global de Mentores</a>
+													<!--<p class="mb-0 small">Bachelor of computer science</p>-->
+												</div>
+											</div>
+											<!-- Dropdown item -->
+											<div class="d-flex mb-4 position-relative">
+												<img src="assets/images/client/uni-logo-02.svg" class="icon-md" alt="">
+												<div class="ms-3">
+													<a class="stretched-link h6 mb-0" href="#">GRIT Academy</a>
+													<!--<p class="mb-0 small">Masters of computer science</p>-->
+												</div>
+											</div>
+											<!-- Dropdown item -->
+											<div class="d-flex mb-4 position-relative">
+												<img src="assets/images/client/uni-logo-03.svg" class="icon-md" alt="">
+												<div class="ms-3">
+													<a class="stretched-link h6 mb-0" href="#">Tu despertar digital</a>
+													<!--<p class="mb-0 small">Medical science college</p>-->
+												</div>
+											</div>
+										</div>
+
+										<!-- Dropdown column item -->
+										<div class="col-xl-6 col-xxl-4">
+											<h6 class="mb-0">Certificate en</h6>
+											<hr> <!-- Divider -->
+											<!-- Dropdown item -->
+											<div class="d-flex mb-4 position-relative">
+												<h2 class="mb-0"><i class="fab fa-fw fa-google text-google-icon"></i></h2>
+												<div class="ms-2">
+													<a class="stretched-link h6 mb-0" href="#">Negocios digitales</a>
+													<p class="mb-0 small">Sin requisitos previos</p>
+												</div>
+											</div>
+											<!-- Dropdown item -->
+											<div class="d-flex mb-4 position-relative">
+												<h2 class="mb-0"><i class="fab fa-fw fa-google text-google-icon"></i></h2>
+												<div class="ms-2">
+													<a class="stretched-link h6 mb-0" href="#">Desarrollo de procesos</a>
+													<p class="mb-0 small">Sin requisitos previos</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li> <a class="dropdown-item" href="#">Coaching</a></li>
+							<li> <a class="dropdown-item" href="#">Bienestar</a></li>
+							<li> <a class="dropdown-item" href="#">Terapias</a></li>							
+							<li> <hr class="dropdown-divider"></li>
+							<li> <a class="dropdown-item bg-primary text-primary bg-opacity-10 rounded-2 mb-0" href="#">Ver todas las categorias</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- Nav category menu END -->
+
+				<!-- Nav Main menu START -->
+				<ul class="navbar-nav navbar-nav-scroll me-auto">
+					<!-- Nav item 1 Demos -->
+					<li class="nav-item">
+						<a class="nav-link" href="" id="" aria-haspopup="true" aria-expanded="false">Inicio</a></li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="" aria-haspopup="true" aria-expanded="false">Cursos</a></li>
+					<li class="nav-item">
+						<a class="nav-link" routerLink="/pricing" id="" aria-haspopup="true" aria-expanded="false">Precios</a></li>	
+				</ul>
+				<!-- Nav Main menu END -->
+
+				<!-- Nav Search START -->
+				<div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+					<div class="nav-item w-100">
+						<form class="position-relative">
+							<input class="form-control pe-5 bg-transparent" type="search" placeholder="Buscar ..." aria-label="Search">
+							<button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="fas fa-search fs-6 "></i></button>
+						</form>
+					</div>
+				</div>
+				<!-- Nav Search END -->
+			</div>
+			<!-- Main navbar END -->
+
+            <!-- Star header invited -->
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+				<a class="btn btn-warning" routerLink="/login" role="button">Login</a>
+				<a class="btn btn-warning" routerLink="/register">Registro</a>
+            </div>
+           
+			<!-- Profile START -->
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>

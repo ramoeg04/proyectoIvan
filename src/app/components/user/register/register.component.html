@@ -1,1 +1,88 @@
-<p>register works!</p>
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+	<section class="p-0 d-flex align-items-center position-relative overflow-hidden">
+	
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Right -->
+				<div class="col-12 col-lg-6 m-auto">
+					<div class="row my-5">
+						<div class="col-sm-10 col-xl-8 m-auto">
+							<!-- Title -->
+							<img src="#" class="h-40px mb-2" alt="">
+							<h2>Registrate hoy!</h2>
+							<!--<p class="lead mb-4">Nice to see you! Please Sign up with your account.</p>-->
+						
+							<!-- Form START  "-->
+							
+							<form [formGroup]="RegisterForm"> 
+								<!-- Name -->
+								<div class="mb-4">
+							
+									<div class="input-group input-group-lg">
+										<span class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i class="bi bi-person-circle"></i></span>
+										<input type="text" required="" class="form-control border-0 bg-light rounded-end ps-1" placeholder="Name" id="Name" formControlName="name">
+									</div>
+								</div>
+								<!-- Email -->
+								<div class="mb-4">
+									<!--<label for="exampleInputEmail1" class="form-label">Email</label>-->
+									<div class="input-group input-group-lg">
+										<span class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i class="bi bi-envelope-fill"></i></span>
+										<input type="email" required="" class="form-control border-0 bg-light rounded-end ps-1" placeholder="E-mail" id="exampleInputEmail1" formControlName="email">
+									</div>
+								</div>
+								<!-- Password -->
+								<div class="mb-4">
+									<!--<label for="inputPassword5" class="form-label">Password</label>-->
+									<div class="input-group input-group-lg">
+										<span class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i class="bi bi-lock"></i></span>
+										<input type="password" required="" class="form-control border-0 bg-light rounded-end ps-1" placeholder="*********" id="inputPassword5" formControlName="password">
+									</div>
+								</div>
+								<!-- Check box -->
+								<div class="mb-4">
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="checkbox-1">
+										<label class="form-check-label" for="checkbox-1">Al registrarse, usted acepta los<a href="#"> términos del servicio.</a></label>
+									</div>
+								</div>
+								<!-- Button -->
+								<div class="align-items-center mt-0">
+									<div class="d-grid">
+										<button class="btn btn-warning mb-0" type="submit"  [disabled]="!RegisterForm.valid" (click)="register()">Registrate</button>
+									</div>
+								</div>
+							</form>
+							<!-- Form END -->
+
+							<!-- Social buttons -->
+							<div class="row">
+								<!-- Divider with text -->
+								<div class="position-relative my-4">
+									<hr>
+									<p class="small position-absolute top-50 start-50 translate-middle bg-body px-5">Tambien puedes usar</p>
+								</div>
+								<!-- Social btn -->
+								<div class="col-xxl-6 d-grid">
+									<a href="#" class="btn bg-google mb-2 mb-xxl-0"><i class="bi fa-fw bi-google text-white me-2"></i>Registro con Google</a>
+								</div>
+								<!-- Social btn -->
+								<div class="col-xxl-6 d-grid">
+									<a href="#" class="btn bg-facebook mb-0"><i class="bi fa-fw bi-facebook me-2"></i>Registro con Facebook</a>
+								</div>
+							</div>
+
+							<!-- Sign up link -->
+							<div class="mt-4 text-center">
+								<span>¿Ya tienes una cuenta?<a routerLink="/login"> Inicia sesion.</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
